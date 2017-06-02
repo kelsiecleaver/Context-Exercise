@@ -17,7 +17,7 @@ var wall_e = new Robot("Wall-E");
 
 
 // #1
-console.log(add.call(null, 0, 1));
+console.log(add(null, 0, 1));
 
 // #2
 console.log(add.call(voltron, 2, 3));
@@ -28,3 +28,8 @@ console.log(add.apply(optimus, [20, 30]));
 // #4
 var calculator = add.bind(bender);
 console.log(calculator("drinking ", "beer"));
+
+// function calcuator(arg1, arg2){
+//   return add.bind(bender, arg1, arg2);
+// }
+// console.log(calculator("drinking ", "beer"));
