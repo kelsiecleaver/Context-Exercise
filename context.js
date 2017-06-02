@@ -27,5 +27,4 @@ console.log(add.apply(optimus, [20, 30]));
 
 // #4
 var calculator = add.bind(bender);
-
 console.log(calculator("drinking ", "beer"));
